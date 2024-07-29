@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="navbar-title">QR Code Scanner</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="#scanner">QR Scanner</a>
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+    </div>
+    <div class="container">
+        <h1>QR Code Scanner</h1>
+        <div class="profile">
+            <img src="profile-image.jpg" alt="" class="profile-image">
+            <div class="profile-info">
+                <p>Name</p>
+                <p>Number</p>
+            </div>
+        </div>
+        <form id="dataForm">
+            <label for="data1">Quantity</label>
+            <input type="text" id="data1" required>
+            <label for="data2">Weight</label>
+            <input type="text" id="data2" required><br>
+            <button type="button" id="scanButton">Сканировать QR-код</button>
+            <button type="submit">Отправить</button>
+            <input type="hidden" id="qrData" name="qrData">
+        </form>
+        <div id="preview"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.0.3/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
