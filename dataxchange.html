@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data exchange</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="navbar-title">Data exchange</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="index.html">QR Scanner</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="dataxchange.html">Data exchange</a>
+    </div>
+    <div class="container123">
+        <div class="sync-container">
+            <span>Synchronize automatically</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        <p>This option let you synchronize with server
+            automatically every few minutes, whenever your
+            device has internet access.</p>
+        <p>Last synchronization:</p>
+        <div class="buttons-cont">
+            <button class="widebutton">Synchronize with server</button>        
+            <button class="widebutton">Check version</button>
+        </div>
+    </div>
+    <script src="dataexchange.js"></script>
+</body>
+</html>

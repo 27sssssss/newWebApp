@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="navbar-title">Settings</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="index.html">QR Scanner</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="dataxchange.html">Data exchange</a>
+    </div>
+    <div class="container123">
+        <div class="savedata">
+            <div class="name">Server address</div>
+            <div class="dataName123" id="first">
+            </div>
+            <div class="name">Database</div>
+            <div class=dataName123 id="second"></div>
+            <div class="name">REST API address</div>
+            <div class="dataName123" id="third"></div>
+            <div class="name">Protocol</div>
+            <div class="dataName123" id="fourth"></div>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

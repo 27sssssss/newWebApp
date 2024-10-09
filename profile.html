@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+        <div class="navbar-title">Profile</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="index.html">QR Scanner</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="dataxchange.html">Data exchange</a>
+
+    </div>
+    
+    <div class="container123">
+        <div class="profile">
+            <img src="profile-image.jpg" alt="" class="profile-image">
+            <div class="profile-info">
+                <p3>Name</p>
+                <p3>Number</p>
+            </div>
+        </div>
+        <div class="savedata">
+            <div class="name">Time "timework"</div>
+            <div class="dataName123" id="timework"></div>
+            <div class="name">Time "piecework"</div>
+            <div class=dataName123 id="piecework"></div>
+            <div class="name">WAGE "timework"</div>
+            <div class="dataName123" id="wage_timework"></div>
+            <div class="name">Average wage "piecework"</div>
+            <div class="dataName123" id="avg_wage_piecework"></div>
+            <div class="name">Total_wage</div>
+            <div class="dataName1231" id="total_wage"></div>
+            <button>Box report</button>
+            <button>
+                <i class="fa-duotone fa-solid fa-camera"></i>
+            </button><br>
+            <button class="widebutton">
+                Scan history
+            </button><br>
+            <button class="widebutton">
+                Work time report
+            </button> <br>
+            <button class="widebutton">
+                Pay the money
+            </button>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

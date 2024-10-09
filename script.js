@@ -62,3 +62,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const menu = document.getElementById('menu');
     menu.style.display = 'none';
 });
+profileData();
+settingsData();
+
+function settingsData(){
+    const serverAddress = 'maxcropdata.com';
+    const dataBase = 'maxcrop_prod';
+    const restApiAddress = 'api/mcm';
+    const protocol = 'https';
+    document.getElementById("first").textContent = `${serverAddress}`;
+    document.getElementById("second").textContent = `${dataBase}`;
+    document.getElementById("third").textContent = `${restApiAddress}`;
+    document.getElementById("fourth").textContent = `${protocol}`;
+}
+function profileData(){
+    const timeWork = 10.00;
+    const pieceWork = 14.00;
+    const wageTimework = 11.00;
+    const avgWagePieceWork = 12.00;
+    const totalWage = 100.00;
+    document.getElementById("timework").textContent = `${timeWork}`;
+    document.getElementById("piecework").textContent = `${pieceWork}`;
+    document.getElementById("wage_timework").textContent = `${wageTimework}`;
+    document.getElementById("avg_wage_piecework").textContent = `${totalWage}`;
+}
